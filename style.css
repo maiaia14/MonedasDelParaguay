@@ -1,0 +1,279 @@
+:root{
+    --verdecito :#74569b;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* hola jajajajajjsajaj cxsdxd*/
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: var(--verdecito);
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: #ffb3cd;
+}
+
+header .navbar {
+    padding-left: 110px;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 1.2rem;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 30px;
+    color: white;
+}
+
+header .navbar a:hover{
+    color: #ffb3cd;
+}
+
+header .icons {
+    display: flex;  
+    padding-left: 300px;
+    width: 100px;
+}
+
+header .icons a{
+    font-size: 2rem;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: pink;
+}
+
+header #toggler{
+    display: none;
+
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+/* putp*/
+
+
+.dashboard {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    flex-direction: row;
+    margin-top: 20vw;
+}
+
+
+.dashboard button {
+    justify-content: flex-start;
+    border-radius: 90rem;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem; 
+
+}
+
+.dashboard button:hover {
+    background-color: #ffb3cb;
+    box-shadow: 0px 0px 30px rgba(147, 35, 159, 0.351);
+}
+
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #74569b;
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    max-width: 800px; 
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.content h2 {
+    color: #74569b;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.content p {
+    line-height: 1.5;
+    text-align: justify; 
+    font-size: 24px;
+}
+
+/* Estilos para las imágenes */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -150px;
+}
+
+.left-image,
+.right-image {
+    max-width: 10%; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Estilo para el fondo de la página */
+body {
+    background: #d8bfd8; 
+    background-size: cover; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene el fondo fijo mientras se desplaza la página */
+    background-position: center; 
+}
+
+.imagen-comun {
+    max-width: 400px;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* Estilos para la página de galería */
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 75px;
+    padding: 20px;
+    max-width: 90%; /* Aumenta el ancho del cuadro al 90% del ancho del viewport */
+}
+
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Cuadrícula de 6 columnas */
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+.image-row img {
+    max-width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para la página de inicio de sesión */
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #74569b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d8bfd8;
+}
+
+/* 
+    jajajajj xdxdxddxdxdxdx logos icons y esas cosas mas abajo
+*/
+
+#playorpause {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 3.4rem;
+}
+
+#playorpause:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: pink;
+}
